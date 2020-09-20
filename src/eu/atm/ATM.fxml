@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.atm.Controller">
+  <children>
+    <Pane prefHeight="366.0" prefWidth="537.0">
+      <children>
+        <Button fx:id="loginButton" layoutX="315.0" layoutY="22.0" mnemonicParsing="false" onAction="#login_onAction" text="Login" />
+        <Label fx:id="regularAccountBalanceLabel" layoutX="137.0" layoutY="293.0" prefHeight="27.0" prefWidth="160.0" text="0" />
+        <TextField fx:id="idTextBox" layoutX="137.0" layoutY="22.0" />
+            <Label layoutX="12.0" layoutY="27.0" prefHeight="17.0" prefWidth="111.0" text="ID" />
+            <Label layoutX="12.0" layoutY="58.0" prefHeight="17.0" prefWidth="111.0" text="Display" />
+            <TextField fx:id="vstupniRok1" disable="true" layoutX="137.0" layoutY="53.0" />
+            <Button fx:id="b1Button" layoutX="137.0" layoutY="130.0" mnemonicParsing="false" onAction="#button1_onAction" text="1" />
+            <Button fx:id="b2Button" layoutX="173.0" layoutY="130.0" mnemonicParsing="false" onAction="#button2_onAction" text="2" />
+            <Button fx:id="b3Button" layoutX="205.0" layoutY="130.0" mnemonicParsing="false" onAction="#button3_onAction" text="3" />
+            <Button fx:id="b4Button" layoutX="137.0" layoutY="170.0" mnemonicParsing="false" onAction="#button4_onAction" text="4" />
+            <Button fx:id="b5Button" layoutX="173.0" layoutY="170.0" mnemonicParsing="false" onAction="#button5_onAction" text="5" />
+            <Button fx:id="b6Button" layoutX="205.0" layoutY="170.0" mnemonicParsing="false" onAction="#button6_onAction" text="6" />
+            <Button fx:id="b7Button" layoutX="137.0" layoutY="212.0" mnemonicParsing="false" onAction="#button7_onAction" text="7" />
+            <Button fx:id="b8Button" layoutX="173.0" layoutY="212.0" mnemonicParsing="false" onAction="#button8_onAction" text="8" />
+            <Button fx:id="b9Button" layoutX="205.0" layoutY="212.0" mnemonicParsing="false" onAction="#button9_onAction" text="9" />
+            <Button fx:id="b0Button" layoutX="173.0" layoutY="250.0" mnemonicParsing="false" onAction="#button0_onAction" text="0" />
+            <Button fx:id="asteriskButton" layoutX="135.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonAsterisk_onAction" text="*" />
+            <Button fx:id="hashtagButton" layoutX="205.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonHastag_onAction" text="#" />
+            <Button fx:id="okButton" layoutX="257.0" layoutY="130.0" mnemonicParsing="false" onAction="#ok_onAction" text="OK" />
+            <Button fx:id="cancelButton" layoutX="257.0" layoutY="170.0" mnemonicParsing="false" onAction="#cancel_onAction" text="CANCEL" />
+            <Label fx:id="savingsAccountBalanceLabel" layoutX="12.0" layoutY="298.0" prefHeight="17.0" prefWidth="111.0" text="Regular Account:" />
+            <Label layoutX="12.0" layoutY="320.0" prefHeight="17.0" prefWidth="111.0" text="Savings Account:" />
+            <Label fx:id="vysledek1" layoutX="137.0" layoutY="315.0" prefHeight="27.0" prefWidth="160.0" text="0" />
+            <Button fx:id="logoutButton" layoutX="315.0" layoutY="53.0" mnemonicParsing="false" onAction="#logout_onAction" text="Logout" />
+      </children>
+    </Pane>
+  </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
