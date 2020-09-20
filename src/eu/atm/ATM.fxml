@@ -17,7 +17,7 @@
         <TextField fx:id="idTextBox" layoutX="137.0" layoutY="22.0" />
             <Label layoutX="12.0" layoutY="27.0" prefHeight="17.0" prefWidth="111.0" text="ID" />
             <Label layoutX="12.0" layoutY="58.0" prefHeight="17.0" prefWidth="111.0" text="Display" />
-            <TextField fx:id="vstupniRok1" disable="true" layoutX="137.0" layoutY="53.0" />
+            <TextField fx:id="pinTextField" disable="true" layoutX="137.0" layoutY="53.0" />
             <Button fx:id="b1Button" layoutX="137.0" layoutY="130.0" mnemonicParsing="false" onAction="#button1_onAction" text="1" />
             <Button fx:id="b2Button" layoutX="173.0" layoutY="130.0" mnemonicParsing="false" onAction="#button2_onAction" text="2" />
             <Button fx:id="b3Button" layoutX="205.0" layoutY="130.0" mnemonicParsing="false" onAction="#button3_onAction" text="3" />
@@ -36,6 +36,10 @@
             <Label layoutX="12.0" layoutY="320.0" prefHeight="17.0" prefWidth="111.0" text="Savings Account:" />
             <Label fx:id="vysledek1" layoutX="137.0" layoutY="315.0" prefHeight="27.0" prefWidth="160.0" text="0" />
             <Button fx:id="logoutButton" layoutX="315.0" layoutY="53.0" mnemonicParsing="false" onAction="#logout_onAction" text="Logout" />
+            <TextField fx:id="moneyTextField" disable="true" layoutX="137.0" layoutY="86.0" />
+            <Label layoutX="12.0" layoutY="91.0" prefHeight="17.0" prefWidth="111.0" text="Money" />
+            <Button fx:id="widrawButton" layoutX="257.0" layoutY="212.0" mnemonicParsing="false" onAction="#widraw_onAction" text="WIDRAW" />
+            <Button fx:id="transferButton" layoutX="257.0" layoutY="250.0" mnemonicParsing="false" onAction="#transfer_onAction" text="TRANSFER TO Savings Account" />
       </children>
     </Pane>
   </children>
