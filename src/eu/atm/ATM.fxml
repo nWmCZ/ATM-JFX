@@ -13,7 +13,7 @@
     <Pane prefHeight="366.0" prefWidth="537.0">
       <children>
         <Button fx:id="loginButton" layoutX="315.0" layoutY="22.0" mnemonicParsing="false" onAction="#login_onAction" text="Login" />
-        <Label fx:id="regularAccountBalanceLabel" layoutX="137.0" layoutY="293.0" prefHeight="27.0" prefWidth="160.0" text="0" />
+        <Label fx:id="regularAccountBalanceLabelValue" layoutX="137.0" layoutY="293.0" prefHeight="27.0" prefWidth="160.0" text="0" />
         <TextField fx:id="idTextBox" layoutX="137.0" layoutY="22.0" />
             <Label layoutX="12.0" layoutY="27.0" prefHeight="17.0" prefWidth="111.0" text="ID" />
             <Label layoutX="12.0" layoutY="58.0" prefHeight="17.0" prefWidth="111.0" text="Display" />
@@ -32,14 +32,16 @@
             <Button fx:id="hashtagButton" layoutX="205.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonHastag_onAction" text="#" />
             <Button fx:id="okButton" layoutX="257.0" layoutY="130.0" mnemonicParsing="false" onAction="#ok_onAction" text="OK" />
             <Button fx:id="cancelButton" layoutX="257.0" layoutY="170.0" mnemonicParsing="false" onAction="#cancel_onAction" text="CANCEL" />
-            <Label fx:id="savingsAccountBalanceLabel" layoutX="12.0" layoutY="298.0" prefHeight="17.0" prefWidth="111.0" text="Regular Account:" />
-            <Label layoutX="12.0" layoutY="320.0" prefHeight="17.0" prefWidth="111.0" text="Savings Account:" />
-            <Label fx:id="vysledek1" layoutX="137.0" layoutY="315.0" prefHeight="27.0" prefWidth="160.0" text="0" />
+            <Label fx:id="RegularAccountLabel" layoutX="12.0" layoutY="298.0" prefHeight="17.0" prefWidth="111.0" text="Regular Account:" />
+            <Label fx:id="savingsAccountBalanceLabel" layoutX="12.0" layoutY="320.0" prefHeight="17.0" prefWidth="111.0" text="Savings Account:" />
+            <Label fx:id="SavingsAccountLabelValue" layoutX="137.0" layoutY="315.0" prefHeight="27.0" prefWidth="160.0" text="0" />
             <Button fx:id="logoutButton" layoutX="315.0" layoutY="53.0" mnemonicParsing="false" onAction="#logout_onAction" text="Logout" />
             <TextField fx:id="moneyTextField" disable="true" layoutX="137.0" layoutY="86.0" />
             <Label layoutX="12.0" layoutY="91.0" prefHeight="17.0" prefWidth="111.0" text="Money" />
             <Button fx:id="widrawButton" layoutX="257.0" layoutY="212.0" mnemonicParsing="false" onAction="#widraw_onAction" text="WIDRAW" />
             <Button fx:id="transferButton" layoutX="257.0" layoutY="250.0" mnemonicParsing="false" onAction="#transfer_onAction" text="TRANSFER TO Savings Account" />
+            <Button fx:id="transferToRegularAcc" layoutX="257.0" layoutY="285.0" mnemonicParsing="false" onAction="#transferToRegular_onAction" text="Transfer to regular account" />
+            <Button fx:id="InsertButton" layoutX="337.0" layoutY="212.0" mnemonicParsing="false" onAction="#insert_onAction" text="INSERT" />
       </children>
     </Pane>
   </children>

@@ -79,6 +79,7 @@ public class Controller {
 
     @FXML
     private Label vysledek1;
+    //prejmenovat
 
     @FXML
     private Button logoutButton;
@@ -242,6 +243,7 @@ public class Controller {
     @FXML
     void cancel_onAction(ActionEvent event) {
         pinTextField.setText("");
+        moneyTextField.setText("");
         pinText = new StringBuilder();
         pinTextSecret = new StringBuilder();
     }
@@ -279,7 +281,7 @@ public class Controller {
                 System.out.println("User is logged in");
                 idTextBox.setDisable(true);
                 moneyTextField.setDisable(false);
-                regularAccountBalanceLabel.setText(String.valueOf(regularAccountBalance));
+                    regularAccountBalanceLabel.setText(String.valueOf(regularAccountBalance));
                 userLoggedIn = true;
             } else {
                 Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -323,6 +325,21 @@ public class Controller {
         System.out.println(pinText);
         pinText = new StringBuilder();
         pinTextSecret = new StringBuilder();
+        int withdrawSum = Integer.parseInt(moneyTextField.getText());
+        if (withdrawSum > regularAccountBalance) {
+            System.out.println("malo penez");
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Unable to withdraw");
+            alert.setHeaderText("");
+            alert.setContentText("Not enough finances");
+            alert.showAndWait();
+
+        }
+        else {
+                    regularAccountBalance = regularAccountBalance - withdrawSum;
+        }
+        System.out.println("castka " + withdrawSum + " odectena");
+        regularAccountBalanceLabel.setText(String.valueOf(regularAccountBalance));
     }
 
     @FXML
@@ -330,5 +347,33 @@ public class Controller {
         System.out.println(pinText);
         pinText = new StringBuilder();
         pinTextSecret = new StringBuilder();
+        int transferSum = Integer.parseInt(moneyTextField.getText());
+        if (transferSum > regularAccountBalance) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Unable to trnsfer");
+            alert.setHeaderText("");
+            alert.setContentText("Please enter at least one character");
+            alert.showAndWait();
+        }
+        else {
+
+        }
+
+        regularAccountBalance = regularAccountBalance - transferSum;
+        savingAccountBalance = savingAccountBalance + transferSum;
+        regularAccountBalanceLabel.setText(String.valueOf(regularAccountBalance));
+        vysledek1.setText(String.valueOf(savingAccountBalance));
+        System.out.println("castka " + transferSum + " prevedena");
+
+
     }
+    @FXML
+    void transferToRegular_onAction(ActionEvent event) {
+
+    }
+    @FXML
+    void insert_onAction(ActionEvent event) {
+
+    }
+
 }
